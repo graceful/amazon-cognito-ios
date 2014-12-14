@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   s.homepage     = 'http://aws.amazon.com/cognito'
   s.license      = 'Amazon Software License'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
-  s.platform     = :ios, '7.0'
-  s.source       = { :git => 'https://github.com/aws/amazon-cognito-ios.git',
+  s.ios.platform = :ios, '8.0'
+  s.osx.platform = :osx, '10.7'
+  s.source       = { :git => 'https://github.com/Graceful/amazon-cognito-ios.git',
                      :tag => s.version}
-  s.dependency 'AWSiOSSDKv2'
   s.requires_arc = true
 
   s.subspec 'Cognito' do |cognito|
